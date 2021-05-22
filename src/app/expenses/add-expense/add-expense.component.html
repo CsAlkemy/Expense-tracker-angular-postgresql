@@ -1,0 +1,23 @@
+<mat-card class="cardSize" style="margin-top: 50px">
+  <mat-card-header class="cardHead">Add Expenses</mat-card-header>
+  <mat-card-content>
+    <form class="example-form">
+      <mat-form-field appearance="fill" class="example-full-width">
+        <mat-label>Select</mat-label>
+        <mat-select>
+          <mat-option value="one">Income</mat-option>
+          <mat-option value="two">Spending</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Details</mat-label>
+        <input matInput placeholder="Salary" />
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Amount</mat-label>
+        <input matInput type="number" placeholder="500" />
+      </mat-form-field>
+      <button type="submit" mat-flat-button color="primary">Submit</button>
+    </form>
+  </mat-card-content>
+</mat-card>

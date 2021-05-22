@@ -1,0 +1,65 @@
+.ResponsiveFlex {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-between;
+}
+.flex-item-left {
+  padding: 10px;
+  margin-right: 7px;
+  flex: 70%;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 30%;
+}
+
+.flex-item-1 {
+  flex: 20%;
+}
+.flex-item-2 {
+  flex: 20%;
+}
+.flex-item-3 {
+  flex: 20%;
+}
+.example-card-one {
+  max-width: 350px;
+  background-color: teal;
+  color: white;
+}
+.example-card-two {
+  max-width: 350px;
+  background-color: #d21f3c;
+  color: white;
+}
+.example-card-three {
+  max-width: 350px;
+  background-color: #3950b1;
+  color: white;
+}
+@media (max-width: 1000px) {
+  .ResponsiveFlex {
+    flex-direction: column;
+  }
+  .flex-item-right {
+    margin-top: 7px;
+  }
+  .flex-item-left {
+    margin-right: 0px;
+  }
+  .example-card-one {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  .example-card-two {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  .example-card-three {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+}

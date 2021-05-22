@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="Title">
+    <h2>Expenses</h2>
+    <span class="spacer"></span>
+    <div class="example-button-row">
+      <button mat-flat-button routerLink="/add-expenses" color="primary">
+        <mat-icon aria-hidden="false" aria-label="Example add icon"
+          >add</mat-icon
+        >
+        Add Expenses
+      </button>
+    </div>
+  </div>
+</div>
+<div>
+  <table mat-table [dataSource]="dataSource" matSort>
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>ID</th>
+      <td mat-cell *matCellDef="let row">{{ row.id }}</td>
+    </ng-container>
+    <ng-container matColumnDef="TransType">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        Transaction Type
+      </th>
+      <td mat-cell *matCellDef="let row">{{ row.TransType }}</td>
+    </ng-container>
+    <ng-container matColumnDef="details">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Details</th>
+      <td mat-cell *matCellDef="let row">{{ row.details }}</td>
+    </ng-container>
+    <ng-container matColumnDef="amount">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Amount</th>
+      <td mat-cell *matCellDef="let row">{{ row.amount }}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="columns"></tr>
+    <tr mat-row *matRowDef="let row; columns: columns"></tr>
+  </table>
+  <mat-paginator
+    [length]="expenses.length"
+    [pageSize]="10"
+    [pageSizeOptions]="[2, 10, 25, 100]"
+  ></mat-paginator>
+</div>

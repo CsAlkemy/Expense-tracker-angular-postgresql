@@ -1,0 +1,17 @@
+.container {
+  margin: 20px;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+.Title {
+  width: 90%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .Title {
+    width: 100%;
+    margin: auto;
+  }
+}
