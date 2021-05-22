@@ -1,0 +1,40 @@
+.ResponsiveFlex {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-between;
+}
+.flex-item-left {
+  padding: 10px;
+  margin-right: 7px;
+  flex: 70%;
+}
+p {
+  font-family: Lato;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 30%;
+}
+@media (max-width: 900px) {
+  .ResponsiveFlex {
+    flex-direction: column;
+  }
+  .flex-item-right {
+    margin-top: 7px;
+  }
+  .flex-item-left {
+    margin-right: 0px;
+  }
+}
+
+.container {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+  grid-gap: 20px;
+  place-content: center;
+  margin-top: 30px;
+}

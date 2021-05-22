@@ -5,6 +5,10 @@
   text-align: left;
   justify-content: space-between;
 }
+.defineWidth {
+  width: 90%;
+  margin: 40px auto;
+}
 .flex-item-left {
   padding: 10px;
   margin-right: 7px;
@@ -15,32 +19,26 @@
   padding: 10px;
   flex: 30%;
 }
-
-.flex-item-1 {
-  flex: 20%;
-}
-.flex-item-2 {
-  flex: 20%;
-}
-.flex-item-3 {
-  flex: 20%;
-}
 .example-card-one {
-  max-width: 350px;
+  min-width: 220px;
   background-color: teal;
   color: white;
 }
 .example-card-two {
-  max-width: 350px;
+  min-width: 220px;
   background-color: #d21f3c;
   color: white;
 }
 .example-card-three {
-  max-width: 350px;
+  min-width: 220px;
   background-color: #3950b1;
   color: white;
 }
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
+  .defineWidth {
+    width: 100%;
+    margin: 40px auto;
+  }
   .ResponsiveFlex {
     flex-direction: column;
   }
@@ -62,4 +60,9 @@
     margin-top: 10px;
     max-width: 100%;
   }
+}
+
+.mat-card-content p {
+  font-size: 30px;
+  margin-left: 10px;
 }

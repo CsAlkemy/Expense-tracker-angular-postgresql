@@ -1,0 +1,25 @@
+<div id="divChart"></div>
+<section class="ResponsiveFlex">
+  <mat-card class="flex-item-left">
+    <mat-card-title style="margin: 20px">Monthly Spendings</mat-card-title>
+    <mat-card-content>
+      <div class="line" [chart]="areaChart"></div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="flex-item-right">
+    <mat-card-title style="margin: 20px">Weekly Spendings</mat-card-title>
+    <mat-card-content>
+      <div class="pie" [chart]="donutChart"></div>
+    </mat-card-content>
+  </mat-card>
+</section>
+<section style="margin-top: 50px">
+  <mat-card>
+    <mat-card-title tyle="margin: 20px">Monthly Income</mat-card-title>
+    <mat-card-content>
+      <div class="line" [chart]="incomeChart"></div>
+    </mat-card-content>
+  </mat-card>
+</section>
+
+<div class="container"></div>

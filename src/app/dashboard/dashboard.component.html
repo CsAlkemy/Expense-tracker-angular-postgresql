@@ -1,60 +1,36 @@
-<div class="ResponsiveFlex">
-  <div>
-    <mat-card class="example-card-one">
-      <mat-card-header>
-        <mat-card-title>Balance</mat-card-title>
-        <mat-card-subtitle style="color: darkgray">Remaining</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-          maxime?
-        </p>
-      </mat-card-content>
-    </mat-card>
-  </div>
-  <div>
-    <mat-card class="example-card-two" color="primary">
-      <mat-card-header>
-        <mat-card-title>Spendings</mat-card-title>
-        <mat-card-subtitle style="color: darkgray"
-          >Total Expenses</mat-card-subtitle
-        >
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-          facilis.
-        </p>
-      </mat-card-content>
-    </mat-card>
-  </div>
-  <div>
-    <mat-card class="example-card-three">
-      <mat-card-header>
-        <mat-card-title>Income</mat-card-title>
-        <mat-card-subtitle style="color: darkgray"
-          >Total Income</mat-card-subtitle
-        >
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, culpa?
-        </p>
-      </mat-card-content>
-    </mat-card>
-  </div>
+<div class="ResponsiveFlex defineWidth">
+  <mat-card class="example-card-one">
+    <mat-card-header>
+      <mat-card-title>Balance</mat-card-title>
+      <mat-card-subtitle style="color: darkgray">Remaining</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>41684</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="example-card-two" color="primary">
+    <mat-card-header>
+      <mat-card-title>Spendings</mat-card-title>
+      <mat-card-subtitle style="color: darkgray"
+        >Total Expenses</mat-card-subtitle
+      >
+    </mat-card-header>
+    <mat-card-content>
+      <p>1016</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="example-card-three">
+    <mat-card-header>
+      <mat-card-title>Income</mat-card-title>
+      <mat-card-subtitle style="color: darkgray"
+        >Total Income</mat-card-subtitle
+      >
+    </mat-card-header>
+    <mat-card-content>
+      <p>42700</p>
+    </mat-card-content>
+  </mat-card>
 </div>
-<section class="ResponsiveFlex">
-  <mat-card class="flex-item-left">
-    <mat-card-title>Monthly Spendings</mat-card-title>
-  </mat-card>
-  <mat-card class="flex-item-right">
-    <mat-card-title>Weekly Spendings</mat-card-title>
-  </mat-card>
-</section>
-<section style="margin-top: 50px">
-  <mat-card>
-    <mat-card-title>Monthly Income</mat-card-title>
-  </mat-card>
-</section>
+<app-my-charts></app-my-charts>

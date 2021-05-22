@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { ChartModule } from 'angular-highcharts';
 
 // Custom Material Components Module
 import { MatSliderModule } from '@angular/material/slider';
@@ -24,8 +24,14 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSelectModule } from '@angular/material/select';
+import { MyChartsComponent } from './my-charts/my-charts.component';
 @NgModule({
-  declarations: [AppComponent, MainNavComponent, routingComponents],
+  declarations: [
+    AppComponent,
+    MainNavComponent,
+    routingComponents,
+    MyChartsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -39,6 +45,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatIconModule,
     MatListModule,
     MatMenuModule,
+    ChartModule,
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
